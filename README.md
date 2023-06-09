@@ -1,2 +1,0 @@
-# WebTemplate
-Template for projects

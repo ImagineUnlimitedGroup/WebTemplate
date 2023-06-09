@@ -1,0 +1,73 @@
+// ------------------------------ 
+
+// Системные файлы
+@use 'sass:math';
+
+// -- Системные стили
+@import './normalize';
+@import './av';
+@import './px';
+
+// ------------------------------
+
+// Цветовые стили
+$primary: #000000; // Primary
+$secondary: #000000; // Secondary
+$tertiary: #000000; // Tertiary
+
+$contrasting: #000000;
+
+// ------------------------------
+
+// Разрешения экранов
+// WidthContainer
+$maxWC: 1180;
+
+$wc4: 991.98;
+$wc3: 767.98;
+$wc2: 474.98;
+$wc1: 359.98;
+
+$minWC: 320;
+
+// ------------------------------
+
+// Система отступов
+// -- Переменные 
+// s - space
+$s1: 2;
+$s2: 4;
+$s3: 8;
+$s4: 16;
+$s5: 32;
+$s6: 64;
+$s7: 128;
+$s8: 256;
+
+
+// -- Классы
+.margin-top {
+	// @include av('margin-top', $s7, $s6, $maxWc, $minWc);
+}
+
+.small-margin-top {
+	// @include av('margin-top', $s6, $s5, $maxWc, $minWc);
+}
+
+// ------------------------------
+
+// -- Файлы стилей
+@import './fonts';
+@import './header';
+@import './footer';
+
+// ------------------------------
+
+// Системные классы
+.container {
+	max-width: $maxWC;
+	margin: 0px auto;
+	padding: $s2 $s3;
+}
+
+// ------------------------------
